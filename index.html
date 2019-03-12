@@ -1,16 +1,21 @@
 <<!DOCTYPE html>
-<html>
+
+  <html>
+
   <head>
-    <!--<meta charset="utf-8">
+
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Meu primeiro Piano</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-   <script src="main.js"></script>-->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js"></script>
+
     <style>
       body {
         background-color: black;
       }
+
       .NotasBrancas {
         position: absolute;
         color: black;
@@ -21,43 +26,104 @@
         padding-bottom: 20px;
         background-color: white;
         cursor: pointer;
-                top: 150px;
-
+        top: 150px;
       }
 
       #C {
         margin-left: 200px;
         left: 350;
       }
+
       #D {
         margin-left: 400px;
         left: 400;
       }
-      
+
+      #F {
+        margin-left: 400px;
+        left: 400;
+      }
+
+      #G {
+        margin-left: 400px;
+        left: 400;
+      }
+
+      #A {
+        margin-left: 400px;
+        left: 400;
+      }
+
+      #B {
+        margin-left: 400px;
+        left: 400;
+      }
+
+      .NotasPretas {
+        position: absolute;
+        color: white;
+        z-index: 60;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 250px;
+        padding-bottom: 20px;
+        background-color: black;
+        cursor: pointer;
+        top: 150px;
+      }
+
+      #C1 {
+        margin-left: 400px;
+        left: 400;
+      }
+
+      #D1 {
+        margin-left: 400px;
+        left: 400;
+      }
+
+      #E1 {
+        margin-left: 400px;
+        left: 400;
+      }
+
+      #F1 {
+        margin-left: 400px;
+        left: 400;
+      }
+
     </style>
+
 
     <script>
       function playAudio(sound) {
+
         var btn = new Audio();
-        btn.src = sound+".wav";
+        btn.src = sound + ".wav";
         btn.play();
+
       }
+
     </script>
+
   </head>
 
   <body>
-      <div>
-    <center><button class="NotasBrancas" id="C" onClick="playAudio('C')"> C </button></center>
-    <center><button class="NotasBrancas" id="D" onClick="playAudio('D')"> D </button></center>
-    <!--<center><button class="E_Note" onClick="playAudio('E')"> E </button></center>
-    <center><button class="F_Note" onClick="playAudio('F')"> F </button></center>
-    <center><button class="G_Note" onClick="playAudio()"> G </button></center>
-    <center><button class="A_Note" onClick="playAudio()"> A </button></center>
-    <center><button class="B_Note" onClick="playAudio()"> B </button></center>
-    <center><button class="C1_Note" onClick="playAudio()"> C1 </button></center>
-    <center><button class="D1_Note" onClick="playAudio()"> D1 </button></center>
-    <center><button class="E1_Note" onClick="playAudio()"> E1 </button></center>
-    <center><button class="F1_Note" onClick="playAudio()"> F1 </button></center>-->
+    <div>
+
+      <center><button class="NotasBrancas" id="C" onClick="playAudio('C')"> C </button></center>
+      <center><button class="NotasBrancas" id="D" onClick="playAudio('D')"> D </button></center>
+      <center><button class="NotasBrancas" id="E" onClick="playAudio('E')"> E </button></center>
+      <center><button class="NotasBrancas" id="F" onClick="playAudio('F')"> F </button></center>
+      <center><button class="NotasBrancas" id="G" onClick="playAudio('G')"> G </button></center>
+      <center><button class="NotasBrancas" id="A" onClick="playAudio('A')"> A </button></center>
+      <center><button class="NotasBrancas" id="B" onClick="playAudio('B')"> B </button></center>
+      <center><button class="NotasPretas" id="C1" onClick="playAudio('C1')"> C1 </button></center>
+      <center><button class="NotasPretas" id="D1" onClick="playAudio('D1')"> D1 </button></center>
+      <center><button class="NotasPretas" id="E1" onClick="playAudio('E1')"> E1 </button></center>
+      <center><button class="NotasPretas" id="F1" onClick="playAudio('F1')"> F1 </button></center>
+
     </div>
   </body>
-</html>
+
+  </html>
